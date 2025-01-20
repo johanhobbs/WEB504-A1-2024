@@ -1,0 +1,21 @@
+#page {
+  width: 100%;
+  min-height: 100vh;
+}
+
+#page {
+  background-color: #eee;
+  color: #222;
+}
+
+#dark-mode:checked ~ #page {
+  background-color: #222;
+  color: #eee;
+}
+
+hidden {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #447;
+}
