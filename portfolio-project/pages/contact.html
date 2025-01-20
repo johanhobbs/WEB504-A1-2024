@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Johan Hobbs Portfolio</title>
+    <link rel="stylesheet" href="../components/contact/contact.css" />
+    <script
+      src="https://kit.fontawesome.com/7929125bea.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--
+    Reminder to self:
+    Gonna build the index page so it's functional and THEN worry about the component shenanigans.
+    Once I have a functional website that does what it needs to, then I can work on the rest of it.
+--><input type="checkbox" id="dark-mode" name="dark-mode" />
+    <label for="dark-mode">Dark Mode</label>
+    <div id="page">
+      <header>
+        <h1>Johan Hobbs</h1>
+        <h2>Developer's Portfolio</h2>
+      </header>
+      <nav>
+        <div id="searchbar">
+          <input type="text" id="search-textbox" />
+          <button>Search</button>
+        </div>
+        <ul id="nav-link-container">
+          <li class="nav-link"><a href="./index.html">Home</a></li>
+          <li class="nav-link"><a href="./projects.html">Projects</a></li>
+          <li class="nav-link"><a href="./skills.html">Skills</a></li>
+          <li class="nav-link"><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h2>Contact</h2>
+
+        <div id="contact-links-container">
+          <a href="mailto:johanhobbsnz@gmail.com"
+            ><div class="contact-button">
+              <i class="fa-solid fa-envelope"></i>
+              <h3>Email me</h3>
+            </div></a
+          >
+
+          <a href="https://github.com/johanhobbs">
+            <div class="contact-button">
+              <i class="fa-solid fa-code-branch"></i>
+              <h3>GitHub</h3>
+            </div>
+          </a>
+        </div>
+      </main>
+      <footer>
+        <p>&copy Johan Hobbs 2025</p>
+      </footer>
+    </div>
+  </body>
+</html>

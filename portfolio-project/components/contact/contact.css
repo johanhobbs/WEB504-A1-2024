@@ -76,12 +76,32 @@ footer {
   column-gap: 1vw;
 }
 
-#johan-photo {
-  height: 20em;
-  width: 20em;
-  object-fit: cover;
-  border-radius: 5em;
-  margin-top: 2.5em;
+.contact-button {
+  border: solid #ccc 2px;
+  background-color: #ddd;
+  max-width: 12em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  margin-top: 0.5em;
+}
+
+main a {
+  width: fit-content;
+}
+
+#contact-links-container {
+  width: fit-content;
+  margin: auto;
+}
+
+#contact-links-container a {
+  color: #222;
+  text-decoration: none;
+}
+
+.contact-button:hover {
+  background-color: #fff;
+  color: rgb(0, 77, 172);
 }
 
 #dark-mode:checked ~ #page {
@@ -104,4 +124,14 @@ footer {
 
 #dark-mode:checked ~ #page .nav-link a:visited {
   color: #dce;
+}
+
+#dark-mode:checked ~ #page main #contact-links-container .contact-button {
+  color: #eee;
+  background-color: #444;
+}
+
+#dark-mode:checked ~ #page main #contact-links-container .contact-button:hover {
+  background-color: #000;
+  color: rgb(184, 216, 255);
 }
