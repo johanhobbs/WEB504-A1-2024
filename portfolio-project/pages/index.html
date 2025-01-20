@@ -11,18 +11,23 @@
     Reminder to self:
     Gonna build the index page so it's functional and THEN worry about the component shenanigans.
     Once I have a functional website that does what it needs to, then I can work on the rest of it.
--->
+--><input type="checkbox" id="dark-mode" name="dark-mode" />
+    <label for="dark-mode">Dark Mode</label>
     <div id="page">
       <header>
         <h1>Johan Hobbs</h1>
         <h2>Online Developer's Portfolio</h2>
       </header>
       <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Skills</a></li>
-          <li><a href="">Contact</a></li>
+        <div id="searchbar">
+          <input type="text" id="search-textbox" />
+          <button>Search</button>
+        </div>
+        <ul id="nav-link-container">
+          <li class="nav-link"><a href="">Home</a></li>
+          <li class="nav-link"><a href="./projects.html">Projects</a></li>
+          <li class="nav-link"><a href="./skills.html">Skills</a></li>
+          <li class="nav-link"><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
       <main>
@@ -32,17 +37,14 @@
           in Information Technology.
         </p>
         <p>
-          Johan was born in New Zealand, and has a keen interest in technology,
-          engineering, leadership, linguistics, and the arts.
+          Johan was born in New Zealand, and has a keen interest in computer
+          technology, engineering, leadership, linguistics, and the arts.
         </p>
+        <img />
       </main>
       <footer>
         <p>&copy Johan Hobbs 2025</p>
       </footer>
     </div>
-    <hidden>
-      <!-- <input type="checkbox" id="open-menu" name="open-menu" /> -->
-      <input type="checkbox" id="dark-mode" name="dark-mode" />
-    </hidden>
   </body>
 </html>
