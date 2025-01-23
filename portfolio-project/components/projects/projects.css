@@ -40,7 +40,6 @@ main {
 
 nav ul li {
   border: #ccc solid 2px;
-  background-color: #eee;
   border-radius: 8px;
   list-style: none;
   font-size: 1.5em;
@@ -69,45 +68,12 @@ footer {
   padding: 1em;
 }
 
-.nav-link:hover {
-  background-color: #fff;
-  color: rgb(0, 77, 172);
-}
-
 #searchbar {
   width: 100%;
   margin-left: 35%;
   display: grid;
   grid-template-columns: 20vw 10vw;
   column-gap: 1vw;
-}
-
-.contact-button {
-  border: solid #ccc 2px;
-  background-color: #ddd;
-  max-width: 12em;
-  padding: 0.5em;
-  border-radius: 0.5em;
-  margin-top: 0.5em;
-}
-
-main a {
-  width: fit-content;
-}
-
-#contact-links-container {
-  width: fit-content;
-  margin: auto;
-}
-
-#contact-links-container a {
-  color: #222;
-  text-decoration: none;
-}
-
-.contact-button:hover {
-  background-color: #fff;
-  color: rgb(0, 77, 172);
 }
 
 #dark-mode:checked ~ #page {
@@ -124,11 +90,6 @@ main a {
   background-color: #555;
 }
 
-#dark-mode:checked ~ #page .nav-link:hover {
-  background-color: #000;
-  color: rgb(184, 216, 255);
-}
-
 #dark-mode:checked ~ #page .nav-link a {
   color: #eee;
 }
@@ -137,12 +98,37 @@ main a {
   color: #dce;
 }
 
-#dark-mode:checked ~ #page main #contact-links-container .contact-button {
-  color: #eee;
-  background-color: #444;
+#projects-wrapper {
+  display: grid;
+  grid-template-columns: 48vw 48vw;
+  gap: 1vw;
+  padding: 1.5vw;
 }
 
-#dark-mode:checked ~ #page main #contact-links-container .contact-button:hover {
+.project {
+  border: #ccc solid 2px;
+  border-radius: 0.5em;
+  padding: 0.5em;
+}
+
+.project p {
+  margin-top: 0.3em;
+}
+
+.project ul {
+  margin-top: 0.3em;
+}
+
+.project ul li {
+  list-style: none;
+  display: inline;
+  font-weight: bold;
+  background-color: #fff;
+  border: solid 2px #ccc;
+  border-radius: 0.3em;
+  padding: 0.1em;
+}
+
+#dark-mode:checked ~ #page .project ul li {
   background-color: #000;
-  color: rgb(184, 216, 255);
 }

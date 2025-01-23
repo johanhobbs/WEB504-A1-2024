@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Johan Hobbs Portfolio</title>
-    <link rel="stylesheet" href="../components/home/home.css" />
+    <link rel="stylesheet" href="../components/projects/projects.css" />
   </head>
   <body>
     <!--
@@ -24,23 +24,68 @@
           <button>Search</button>
         </div>
         <ul id="nav-link-container">
-          <li class="nav-link"><a href="">Home</a></li>
+          <li class="nav-link"><a href="./index.html">Home</a></li>
           <li class="nav-link"><a href="./projects.html">Projects</a></li>
           <li class="nav-link"><a href="./skills.html">Skills</a></li>
           <li class="nav-link"><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
       <main>
-        <h2>Biography</h2>
-        <p>
-          Johan Hobbs is an IT student currently studying towards his bachelor
-          in Information Technology.
-        </p>
-        <p>
-          Johan was born in New Zealand, and has a keen interest in computer
-          technology, engineering, leadership, linguistics, and the arts.
-        </p>
-        <img id="johan-photo" src="../components/home/20241231_094958.jpg" />
+        <h2>Projects</h2>
+        <div id="projects-wrapper">
+          <div id="tic-tac-toe" class="project">
+            <h3>Tic Tac Toe</h3>
+            <ul>
+              <li>Javascript</li>
+              <li>ES6</li>
+              <li>Node.js</li>
+              <li>2024</li>
+            </ul>
+            <p>
+              Created an interactive Tic-Tac-Toe program played using the
+              terminal.
+            </p>
+          </div>
+          <div id="portfolio" class="project">
+            <h3>Portfolio</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS</li>
+              <li>2024</li>
+            </ul>
+            <p>Created a website using HTML and CSS.</p>
+          </div>
+          <div id="game" class="project">
+            <h3>Grid-based Game</h3>
+            <ul>
+              <li>C#</li>
+              <li>MySQL</li>
+              <li>2024</li>
+            </ul>
+            <p>
+              A grid-based prototype game using a MySQL Database to store and
+              load data.
+            </p>
+            <p>
+              Multiple users can log into the game and move their character to a
+              different square on the grid, pick up or place down items, and
+              gain or lose points.
+            </p>
+          </div>
+
+          <div id="patient-health-rms" class="project">
+            <h3>Patient Health Record Management System</h3>
+            <ul>
+              <li>Javascript</li>
+              <li>ES6</li>
+              <li>2024</li>
+            </ul>
+            <p>
+              Created a system to display, interact with and modify patient
+              health records.
+            </p>
+          </div>
+        </div>
       </main>
       <footer>
         <p>&copy Johan Hobbs 2025</p>
