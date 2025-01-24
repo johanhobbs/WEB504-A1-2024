@@ -137,12 +137,6 @@ footer {
   padding: 1.5vw;
 }
 
-@media only screen and (max-width: 1000px) {
-  #skills-wrapper {
-    grid-template-columns: 97vw;
-  }
-}
-
 .skill {
   border: #ccc solid 2px;
   border-radius: 0.5em;
@@ -169,4 +163,13 @@ footer {
 
 #dark-mode:checked ~ #page .skill ul li {
   background-color: #000;
+}
+
+/* Media query: if the width of the screen is equal to or less than 3000px,
+   display a single column with a width of 97% of the screen, instead of two columns. */
+
+@media only screen and (max-width: 1000px) {
+  #skills-wrapper {
+    grid-template-columns: 97vw;
+  }
 }
