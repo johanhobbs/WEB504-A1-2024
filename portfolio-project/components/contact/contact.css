@@ -136,7 +136,7 @@ nav ul li a:visited {
 /* Next, we use a media query to change the behavior of this element depending on screen size */
 
 @media only screen and (max-width: 1000px) {
-  /* display the Menu Toggle element again */
+  /* display the Menu Toggle element that is hidden on larger screens */
   #menu-toggle {
     display: inline-block;
     max-width: fit-content;
@@ -157,6 +157,8 @@ nav ul li a:visited {
     margin: auto;
   }
 
+  /* triangle changes color when hovered */
+
   #menu-toggle:hover #triangle {
     border-top-color: #000;
   }
@@ -165,19 +167,31 @@ nav ul li a:visited {
     border-top-color: #ccc;
   }
 
-  #open-menu:checked ~ #page #menu-toggle #triangle {
-    transform: rotate(180deg);
-  }
+  /* Hide the navigation links until the menu is opened */
 
   #page #nav-link-container {
     transform: scaleY(0);
     max-height: 0;
   }
 
+  /* Arrange navigation elements  vertically instead of horizontally*/
+
+  nav ul {
+    grid-template-columns: auto;
+  }
+
+  /* When the "open menu" checkbox is toggled on, show the menu */
+
   #open-menu:checked ~ #page #nav-link-container {
     transform: scaleY(100%);
     max-height: fit-content;
     transition: ease 0.1s;
+  }
+
+  /* When the menu is opened, rotate the triange to point back upwards */
+
+  #open-menu:checked ~ #page #menu-toggle #triangle {
+    transform: rotate(180deg);
   }
 }
 
