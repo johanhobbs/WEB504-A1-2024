@@ -11,12 +11,8 @@
     ></script>
   </head>
   <body>
-    <!--
-    Reminder to self:
-    Gonna build the index page so it's functional and THEN worry about the component shenanigans.
-    Once I have a functional website that does what it needs to, then I can work on the rest of it.
---><input type="checkbox" id="dark-mode" name="dark-mode" />
-    <label for="dark-mode">Dark Mode</label>
+    <input type="checkbox" id="dark-mode" name="dark-mode" class="hidden" />
+    <input type="checkbox" id="open-menu" name="open-menu" class="hidden" />
     <div id="page">
       <header>
         <h1>Johan Hobbs</h1>
@@ -27,12 +23,26 @@
           <input type="text" id="search-textbox" />
           <button>Search</button>
         </div>
+
         <ul id="nav-link-container">
           <li class="nav-link"><a href="./index.html">Home</a></li>
           <li class="nav-link"><a href="./projects.html">Projects</a></li>
           <li class="nav-link"><a href="./skills.html">Skills</a></li>
           <li class="nav-link"><a href="./contact.html">Contact</a></li>
         </ul>
+        <div id="toggle-buttons-container">
+          <label class="toggle-button" id="menu-toggle" for="open-menu">
+            <div>
+              <h2>Menu</h2>
+              <span id="triangle"></span>
+            </div>
+          </label>
+          <label class="toggle-button" id="dark-mode-toggle" for="dark-mode">
+            <div>
+              <i class="fa-solid fa-sun"></i>
+              <i class="fa-solid fa-moon"></i></div
+          ></label>
+        </div>
       </nav>
       <main>
         <h2>Contact</h2>

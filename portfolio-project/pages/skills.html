@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Johan Hobbs Portfolio</title>
     <link rel="stylesheet" href="../components/skills/skills.css" />
+    <script
+      src="https://kit.fontawesome.com/7929125bea.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <!--
-    Reminder to self:
-    Gonna build the index page so it's functional and THEN worry about the component shenanigans.
-    Once I have a functional website that does what it needs to, then I can work on the rest of it.
---><input type="checkbox" id="dark-mode" name="dark-mode" />
-    <label for="dark-mode">Dark Mode</label>
+    <input type="checkbox" id="dark-mode" name="dark-mode" class="hidden" />
+    <input type="checkbox" id="open-menu" name="open-menu" class="hidden" />
     <div id="page">
       <header>
         <h1>Johan Hobbs</h1>
@@ -29,6 +29,19 @@
           <li class="nav-link"><a href="./skills.html">Skills</a></li>
           <li class="nav-link"><a href="./contact.html">Contact</a></li>
         </ul>
+        <div id="toggle-buttons-container">
+          <label class="toggle-button" id="menu-toggle" for="open-menu">
+            <div>
+              <h2>Menu</h2>
+              <span id="triangle"></span>
+            </div>
+          </label>
+          <label class="toggle-button" id="dark-mode-toggle" for="dark-mode">
+            <div>
+              <i class="fa-solid fa-sun"></i>
+              <i class="fa-solid fa-moon"></i></div
+          ></label>
+        </div>
       </nav>
       <main>
         <h2>Skills</h2>
@@ -41,7 +54,8 @@
               <li>Simple Interactive Websites</li>
             </ul>
             <p>
-              HTML and CSS are the basic building blocks that make a website.
+              HTML and CSS are used to build websites. A simple, non-interactive
+              website such as this one can be built using HTML and CSS.
             </p>
           </div>
           <div class="skill">

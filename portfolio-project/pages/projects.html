@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Johan Hobbs Portfolio</title>
     <link rel="stylesheet" href="../components/projects/projects.css" />
+    <script
+      src="https://kit.fontawesome.com/7929125bea.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <!--
-    Reminder to self:
-    Gonna build the index page so it's functional and THEN worry about the component shenanigans.
-    Once I have a functional website that does what it needs to, then I can work on the rest of it.
---><input type="checkbox" id="dark-mode" name="dark-mode" />
-    <label for="dark-mode">Dark Mode</label>
+    <input type="checkbox" id="dark-mode" name="dark-mode" class="hidden" />
+    <input type="checkbox" id="open-menu" name="open-menu" class="hidden" />
+
     <div id="page">
       <header>
         <h1>Johan Hobbs</h1>
@@ -29,6 +30,19 @@
           <li class="nav-link"><a href="./skills.html">Skills</a></li>
           <li class="nav-link"><a href="./contact.html">Contact</a></li>
         </ul>
+        <div id="toggle-buttons-container">
+          <label class="toggle-button" id="menu-toggle" for="open-menu">
+            <div>
+              <h2>Menu</h2>
+              <span id="triangle"></span>
+            </div>
+          </label>
+          <label class="toggle-button" id="dark-mode-toggle" for="dark-mode">
+            <div>
+              <i class="fa-solid fa-sun"></i>
+              <i class="fa-solid fa-moon"></i></div
+          ></label>
+        </div>
       </nav>
       <main>
         <h2>Projects</h2>
@@ -82,7 +96,8 @@
             </ul>
             <p>
               Created a system to display, interact with and modify patient
-              health records.
+              health records, containing mock data. Intended to resemble a
+              prototype for a simple, terminal-based record keeping system.
             </p>
           </div>
         </div>
